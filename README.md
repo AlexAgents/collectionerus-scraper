@@ -1,14 +1,11 @@
-<!-- Бейджи -->
+# 📦 Collectionerus Scraper
+
+> Полнофункциональный скрапер, просмотрщик и архиватор коллекций с сайта [collectionerus.ru](https://collectionerus.ru).
+
 [![Release](https://img.shields.io/github/v/release/qexela/collectionerus-scraper?logo=github&color=blue)](https://github.com/qexela/collectionerus-scraper/releases/latest)
 [![License](https://img.shields.io/github/license/qexela/collectionerus-scraper?color=yellow)](https://github.com/qexela/collectionerus-scraper/blob/main/LICENSE)
 ![Python](https://img.shields.io/badge/Python-3.8+-3776AB?logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-2.3+-000000?logo=flask&logoColor=white)
-
----
-
-# 📦 Collectionerus Scraper
-
-> Полнофункциональный скрапер, просмотрщик и архиватор коллекций с сайта [collectionerus.ru](https://collectionerus.ru).
 
 ![Коллекций](https://img.shields.io/badge/Коллекций-141-blue)
 ![Предметов](https://img.shields.io/badge/Предметов-~200K-green)

@@ -1,16 +1,21 @@
+<div align="center">
+
 # 📦 Collectionerus Scraper
 
 > Полнофункциональный скрапер, просмотрщик и архиватор коллекций с сайта [collectionerus.ru](https://collectionerus.ru).
 
+<!-- Группа 1: Ссылки и Технологии -->
 [![Release](https://img.shields.io/github/v/release/qexela/collectionerus-scraper?logo=github&color=blue)](https://github.com/qexela/collectionerus-scraper/releases/latest)
 [![License](https://img.shields.io/github/license/qexela/collectionerus-scraper?color=yellow)](https://github.com/qexela/collectionerus-scraper/blob/main/LICENSE)
 ![Python](https://img.shields.io/badge/Python-3.8+-3776AB?logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-2.3+-000000?logo=flask&logoColor=white)
 
-![Коллекций](https://img.shields.io/badge/Коллекций-141-blue?logo=stackbit&logoColor=white)
-![Предметов](https://img.shields.io/badge/Предметов-~200K-green?logo=dropbox&logoColor=white)
+<!-- Группа 2: Статистика -->
+![Коллекций](https://img.shields.io/badge/Коллекций-141-007EC6?logo=stackbit&logoColor=white)
+![Предметов](https://img.shields.io/badge/Предметов-~200K-2ea44f?logo=dropbox&logoColor=white)
 ![Данные](https://img.shields.io/badge/Данные-~125GB-orange?logo=database&logoColor=white)
 
+</div>
 ---
 
 ## 📋 Оглавление
@@ -80,6 +85,9 @@
 
 ## Структура проекта
 
+<details>
+<summary>📂 <b>Нажмите, чтобы развернуть дерево файлов</b></summary>
+
 ```
 collectionerus-scraper/
 ├── config.py                  # Единая конфигурация
@@ -126,6 +134,7 @@ collectionerus-scraper/
 └── static/
     └── style.css
 ```
+</details>
 
 ---
 
@@ -142,9 +151,10 @@ collectionerus-scraper/
 pip install -r requirements.txt
 ```
 
-### requirements.txt
+<details>
+<summary>📄 <b>Содержимое requirements.txt</b></summary>
 
-```
+```text
 requests>=2.28
 beautifulsoup4>=4.11
 flask>=2.3
@@ -153,6 +163,7 @@ bleach>=6.0       # опционально, для XSS-защиты
 pillow>=9.0       # опционально, для генерации иконок
 pyinstaller>=5.0  # опционально, для сборки EXE
 ```
+</details>
 
 ---
 
@@ -407,27 +418,24 @@ ZIP_COMPRESSION_LEVEL = 6
 
 ### metadata.json
 
+<details>
+<summary>📄 <b>Пример JSON (развернуть)</b></summary>
+
 ```json
 {
   "collection": {
     "name": "Советские открытки",
     "slug": "ussr-postcards",
     "url": "https://collectionerus.ru/collections/ussr-postcards/",
-    "owner": "Иванов",
     "count": 500
   },
   "scraped_at": "2026-02-28T12:00:00",
-  "total_items": 500,
   "items": [
     {
       "index": 1,
       "filename": "00001_Открытка_1960.jpg",
       "title": "Открытка «С Новым годом!»",
       "url": "https://collectionerus.ru/collections/ussr-postcards/items/12345/",
-      "data_id": "12345",
-      "data_group": "1960",
-      "description": "Художник: Зарубин",
-      "description_html": "<div>...</div>",
       "properties": {
         "Год": "1960",
         "Художник": "Зарубин",
@@ -440,17 +448,21 @@ ZIP_COMPRESSION_LEVEL = 6
       "related_items": [
         {
           "file": "00001_Открытка_1960/related_01_Обратная_сторона.jpg",
-          "title": "Обратная сторона",
-          "url": "https://collectionerus.ru/collections/ussr-postcards/items/12346/"
+          "title": "Обратная сторона"
         }
-      ],
-      "has_folder": true
+      ]
     }
   ]
 }
 ```
+</details>
+
+---
 
 ### Структура папки коллекции
+
+<details>
+<summary>📄 <b> data (развернуть)</b></summary>
 
 ```
 data/metadata/<slug>/
@@ -468,6 +480,7 @@ data/metadata/<slug>/
     │   └── _info.json
     └── ...
 ```
+</details>
 
 ---
 

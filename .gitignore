@@ -1,0 +1,57 @@
+# ═══════════════════════════════════════════════
+# Collectionerus Scraper — .gitignore
+# ═══════════════════════════════════════════════
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+*.spec
+*.manifest
+*.pdb
+
+# ── Virtual Environment ──
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# ── IDE ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ── Данные проекта ──
+data/metadata/
+data/archives/
+data/*.log
+*.log
+
+# ── Временные файлы ──
+*.tmp
+*.bak
+*.orig
+
+# ── Иконки (генерируются автоматически) ──
+# assets/*.ico
+
+# ── Шаблоны и статика (генерируются viewer.py) ──
+# templates/
+# static/
